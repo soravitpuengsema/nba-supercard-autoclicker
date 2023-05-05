@@ -5,96 +5,94 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #SingleInstance, Force
 
 ; Draft Board
-draftBoard := "F:\Programming\NBA Supercard\Screen Pic\draftboard.png"
-draftPick := "F:\Programming\NBA Supercard\Screen Pic\draftpick.png"
-selectPick := "F:\Programming\NBA Supercard\Screen Pic\selectpick.png"
-ads := "F:\Programming\NBA Supercard\Screen Pic\ads.png"
-adsFind := "F:\Programming\NBA Supercard\Screen Pic\adsfind.png"
-maxCard := "F:\Programming\NBA Supercard\Screen Pic\maxcard.png"
-maxPick := "F:\Programming\NBA Supercard\Screen Pic\maxpick.png"
-draftCheck := "F:\Programming\NBA Supercard\Screen Pic\draftcheck.png"
+draftBoard := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\draftboard.png"
+draftPick := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\draftpick.png"
+selectPick := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\selectpick.png"
+ads := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\ads.png"
+adsFind := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\adsfind.png"
+maxCard := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\maxcard.png"
+maxPick := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\maxpick.png"
+draftCheck := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\draftcheck.png"
 
 ; Draft Pick Dust
-goldPick := "F:\Programming\NBA Supercard\Screen Pic\Tier\1gold.png"
-emeraldPick := "F:\Programming\NBA Supercard\Screen Pic\Tier\2emerald.png"
-sapphirePick := "F:\Programming\NBA Supercard\Screen Pic\Tier\3sapphire.png"
-rubyPick := "F:\Programming\NBA Supercard\Screen Pic\Tier\4ruby.png"
-amethystPick := "F:\Programming\NBA Supercard\Screen Pic\Tier\5amethyst.png"
-onyxPick := "F:\Programming\NBA Supercard\Screen Pic\Tier\6onyx.png"
-diamondPick := "F:\Programming\NBA Supercard\Screen Pic\Tier\7diamond.png"
-perimeterPick := "F:\Programming\NBA Supercard\Screen Pic\Tier\8perimeter.png"
-vortexPick := "F:\Programming\NBA Supercard\Screen Pic\Tier\9vortex.png"
-sparkPick := "F:\Programming\NBA Supercard\Screen Pic\Tier\10spark.png"
-downtownPick := "F:\Programming\NBA Supercard\Screen Pic\Tier\11downtown.png"
-streetPick := "F:\Programming\NBA Supercard\Screen Pic\Tier\12street.png"
-breakoutPick := "F:\Programming\NBA Supercard\Screen Pic\Tier\13breakout.png"
+goldPick := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\Tier\1gold.png"
+emeraldPick := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\Tier\2emerald.png"
+sapphirePick := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\Tier\3sapphire.png"
+rubyPick := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\Tier\4ruby.png"
+amethystPick := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\Tier\5amethyst.png"
+onyxPick := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\Tier\6onyx.png"
+diamondPick := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\Tier\7diamond.png"
+perimeterPick := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\Tier\8perimeter.png"
+vortexPick := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\Tier\9vortex.png"
+sparkPick := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\Tier\10spark.png"
+downtownPick := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\Tier\11downtown.png"
+streetPick := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\Tier\12street.png"
+breakoutPick := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\Tier\13breakout.png"
 
 ; The Gauntlet
-theGauntletLogo := "F:\Programming\NBA Supercard\Screen Pic\TG\tg-logo.png"
-theGauntletContinue := "F:\Programming\NBA Supercard\Screen Pic\TG\tg-continue.png"
-theGauntletPlay := "F:\Programming\NBA Supercard\Screen Pic\TG\tg-play.png"
-theGauntletClick := "F:\Programming\NBA Supercard\Screen Pic\TG\tg_choose.png"
-theGauntlet1v1 := "F:\Programming\NBA Supercard\Screen Pic\TG\tg-1v1.png"
-theGauntlet2v2 := "F:\Programming\NBA Supercard\Screen Pic\TG\tg-2v2.png"
-theGaunletDeck1 := "F:\Programming\NBA Supercard\Screen Pic\TG\tg-deck1.png"
-theGaunletDeck2 := "F:\Programming\NBA Supercard\Screen Pic\TG\tg-deck2.png"
-theGaunletDeck3 := "F:\Programming\NBA Supercard\Screen Pic\TG\tg-deck3.png"
-theGaunletDeck4 := "F:\Programming\NBA Supercard\Screen Pic\TG\tg-deck4.png"
+theGauntletLogo := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\TG\tg-logo.png"
+theGauntletContinue := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\TG\tg-continue.png"
+theGauntletPlay := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\TG\tg-play.png"
+theGauntletClick := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\TG\tg_choose.png"
+theGauntlet1v1 := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\TG\tg-1v1.png"
+theGauntlet2v2 := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\TG\tg-2v2.png"
+theGaunletDeck1 := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\TG\tg-deck1.png"
+theGaunletDeck2 := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\TG\tg-deck2.png"
+theGaunletDeck3 := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\TG\tg-deck3.png"
+theGaunletDeck4 := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\TG\tg-deck4.png"
 
 ; Team Gauntlet
-teamGauntletLogo := "F:\Programming\NBA Supercard\Screen Pic\TG\tg-logo1.png"
-teamGauntletContinue := "F:\Programming\NBA Supercard\Screen Pic\TG\tg-continue1.png"
+teamGauntletLogo := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\TG\tg-logo1.png"
+teamGauntletContinue := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\TG\tg-continue1.png"
 
 ; KOTH
-KOTHMenuLogo := "F:\Programming\NBA Supercard\Screen Pic\KOTH\menu-logo.png"
-KOTHLogo := "F:\Programming\NBA Supercard\Screen Pic\KOTH\logo.png"
-KOTHProceedWin := "F:\Programming\NBA Supercard\Screen Pic\KOTH\proceed-vs-win.png"
-KOTHProceedLose := "F:\Programming\NBA Supercard\Screen Pic\KOTH\proceed-vs-lose.png"
-KOTHRandom := "F:\Programming\NBA Supercard\Screen Pic\KOTH\random.png"
-KOTHOppoC := "F:\Programming\NBA Supercard\Screen Pic\KOTH\oppochoice.png"
-KOTHYourC := "F:\Programming\NBA Supercard\Screen Pic\KOTH\yourchoice.png"
-KOTHBronze := "F:\Programming\NBA Supercard\Screen Pic\KOTH\normal-bronze.png"
-KOTHBronzeBig := "F:\Programming\NBA Supercard\Screen Pic\KOTH\big-bronze-temp.png"
-KOTHGold := "F:\Programming\NBA Supercard\Screen Pic\KOTH\normal-gold.png"
-KOTHFreeEnergy := "F:\Programming\NBA Supercard\Screen Pic\KOTH\free-energy.png"
-KOTHNoEnergy := "F:\Programming\NBA Supercard\Screen Pic\KOTH\no-energy.png"
-
-H2HLogo := "F:\Programming\NBA Supercard\Screen Pic\KOTH\h2h-logo.png"
+KOTHMenuLogo := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\KOTH\menu-logo.png"
+KOTHLogo := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\KOTH\logo.png"
+KOTHProceedWin := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\KOTH\proceed-vs-win.png"
+KOTHProceedLose := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\KOTH\proceed-vs-lose.png"
+KOTHRandom := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\KOTH\random.png"
+KOTHOppoC := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\KOTH\oppochoice.png"
+KOTHYourC := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\KOTH\yourchoice.png"
+KOTHBronze := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\KOTH\normal-bronze.png"
+KOTHBronzeBig := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\KOTH\big-bronze-temp.png"
+KOTHGold := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\KOTH\normal-gold.png"
+KOTHFreeEnergy := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\KOTH\free-energy.png"
+KOTHNoEnergy := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\KOTH\no-energy.png"
+H2HLogo := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\KOTH\h2h-logo.png"
 
 ; Quick Game
-quickGame := "F:\Programming\NBA Supercard\Screen Pic\QG\qg.png"
-quickGameName := "F:\Programming\NBA Supercard\Screen Pic\QG\qg-name.png"
-quickGamePlay := "F:\Programming\NBA Supercard\Screen Pic\QG\qg-play.png"
-quickGameEditDeck := "F:\Programming\NBA Supercard\Screen Pic\QG\qg-editdeck.png"
-quickGameSwap := "F:\Programming\NBA Supercard\Screen Pic\QG\qg-swap.png"
-quickGameAutofill := "F:\Programming\NBA Supercard\Screen Pic\QG\qg-autofill.png"
+quickGame := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\QG\qg.png"
+quickGameName := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\QG\qg-name.png"
+quickGamePlay := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\QG\qg-play.png"
+quickGameEditDeck := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\QG\qg-editdeck.png"
+quickGameSwap := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\QG\qg-swap.png"
+quickGameAutofill := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\QG\qg-autofill.png"
 
 ; Trophy Case
-trophyCaseName := "F:\Programming\NBA Supercard\Screen Pic\trophycase.png"
-trophyCaseLogo := "F:\Programming\NBA Supercard\Screen Pic\trophycase1.png"
+trophyCaseName := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\trophycase.png"
+trophyCaseLogo := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\trophycase1.png"
 
 ; Road Trip
-RTLogo := "F:\Programming\NBA Supercard\Screen Pic\RT\rt_logo.png"
-RTPlay := "F:\Programming\NBA Supercard\Screen Pic\RT\rt_play.png"
-RTPick := "F:\Programming\NBA Supercard\Screen Pic\RT\rt_pick.png"
-RTPlayIn := "F:\Programming\NBA Supercard\Screen Pic\RT\rt_playin.png"
-RTStreak := "F:\Programming\NBA Supercard\Screen Pic\RT\rt_streak.png"
-RTReveal := "F:\Programming\NBA Supercard\Screen Pic\RT\rt_reveal.png"
-RTBlock := "F:\Programming\NBA Supercard\Screen Pic\RT\rt_block.png"
-RTProceed := "F:\Programming\NBA Supercard\Screen Pic\RT\rt_proceed.png"
-RT2v2NBA := "F:\Programming\NBA Supercard\Screen Pic\RT\nba2v2.png"
-RT2v2WNBA := "F:\Programming\NBA Supercard\Screen Pic\RT\wnba2v2.png"
-RTx3 := "F:\Programming\NBA Supercard\Screen Pic\RT\x3.png"
-RTx4 := "F:\Programming\NBA Supercard\Screen Pic\RT\x4.png"
+RTLogo := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\RT\rt_logo.png"
+RTPlay := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\RT\rt_play.png"
+RTPick := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\RT\rt_pick.png"
+RTPlayIn := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\RT\rt_playin.png"
+RTStreak := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\RT\rt_streak.png"
+RTReveal := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\RT\rt_reveal.png"
+RTBlock := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\RT\rt_block.png"
+RTProceed := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\RT\rt_proceed.png"
+RT2v2NBA := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\RT\nba2v2.png"
+RT2v2WNBA := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\RT\wnba2v2.png"
+RTx3 := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\RT\x3.png"
+RTx4 := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\RT\x4.png"
 
 ; SuperCoin Hustle
-SHLogo := "F:\Programming\NBA Supercard\Screen Pic\SH\sh-logo.png"
-SHPlay := "F:\Programming\NBA Supercard\Screen Pic\SH\sh-play.png"
-SHProceed := "F:\Programming\NBA Supercard\Screen Pic\SH\sh-proceed.png"
-SHVS := "F:\Programming\NBA Supercard\Screen Pic\SH\sh-vs.png"
-SHFree := "F:\Programming\NBA Supercard\Screen Pic\SH\sh-free.png"
-SHClaim := "F:\Programming\NBA Supercard\Screen Pic\SH\sh-claim.png"
-
+SHLogo := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\SH\sh-logo.png"
+SHPlay := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\SH\sh-play.png"
+SHProceed := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\SH\sh-proceed.png"
+SHVS := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\SH\sh-vs.png"
+SHFree := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\SH\sh-free.png"
+SHClaim := "F:\Programming\NBA Supercard\nba-supercard-autoclicker\Screen Pic\SH\sh-claim.png"
 
 ; GUI
 Gui, Add, Text,Center , NBA SuperCard Autoclicker V5
@@ -121,8 +119,6 @@ Gui, Add, Text, Center x30, Opponent:
 Gui, Add, Radio, x+m vtheGauntlet1_rd, +1
 Gui, Add, Radio, x+m vtheGauntlet3_rd, +3
 Gui, Add, Radio, x+m vtheGauntlet5_rd, +5
-Gui, Add, CheckBox, x10 vOldSuperCoin_cb, SuperCoinH (Bronze Silver Gold)
-GuiControl, Disable, oldSuperCoin_cb
 Gui, Add, CheckBox, x10 vSuperCoin_cb, SuperCoinH
 Gui, Add, Edit, x+m h20 w50 vSHTextbox, 123 456
 Gui, Add, Button, x+m h20 vSHSendBtn gSHSendText, Set
@@ -317,31 +313,6 @@ SHResetText(){
 
 ; SuperCoin Hustle Function
 SHArrayXY := [41, 113, 185, 257, 329, 401]
-OldSHPFingPixel(index, isMax) {
-	global SHArrayXY
-	xIndex := SHArrayXY[index]
-	; textLog := textLog "xIndex: " xIndex "`n"
-	; GuiControl,, textBox, %textLog%
-	Click, %xIndex% 797
-	Sleep, 1500
-
-	if (isMax == 1) { ; choose our player higher
-		Click, 105 682
-		textLog := textLog "isMax = 1 `n"
-		GuiControl,, textBox, %textLog%
-	}
-	if (isMax == 0) { ; choose opponent higher
-		Click, 273 681
-		textLog := textLog "isMax = 0 `n"
-		GuiControl,, textBox, %textLog%
-	}
-	Sleep, 250
-
-	Loop, 8 {
-		Click, 402 105
-		Sleep, 1000
-	}
-}
 
 Loop {
 	global isPause
@@ -651,254 +622,6 @@ Loop {
 					}
 				}
 			}
-			; if ( OldSuperCoin_cb = 1 ) {
-
-			; 	ImageSearch, x, y, 137, 647, 196, 676, *100 %SHPlay% ; SH Click play
-			; 	If (ErrorLevel = 0) {
-			; 		Sleep, 500
-			; 		Click, 168 661
-
-			; 		ImageSearch, x7, y7, 128, 542, 192, 582, *50 %SHFree%
-			; 		If (ErrorLevel = 0) {
-			; 			doPause()
-			; 		} Else {
-			; 			findVSStart := false
-			; 			While (findVSStart == false) {
-			; 				Click, 402 105
-					
-			; 				ImageSearch, x, y, 176, 524, 231, 592, *100 %SHVS% ; find VS in SH
-			; 				If (ErrorLevel = 0) {
-			; 					findVSStart = true
-			; 					; textLog := textLog "findVSStart: " findVSStart "`n"
-			; 					; GuiControl,, textBox, %textLog%
-			; 				}
-					
-			; 				Sleep, 1000
-			; 			}
-			; 		}				
-			; 	}
-			; 	; Go through Max 50 Cards popup
-			; 	ImageSearch, x7, y7, 76, 239, 381, 324, *50 %maxPick%
-			; 	If (ErrorLevel = 0) {
-			; 		Click, 310 497
-			; 		Sleep, 500
-			; 	}
-
-			; 	ImageSearch, x, y, 102, 35, 328, 71, *100 %SHLogo% ; when Team Gaunlet logo appear
-			; 	If (ErrorLevel = 0) {
-			; 		Sleep, 1000
-
-			; 		PixelGetColor, one, 41, 797
-			; 		PixelGetColor, two, 113, 797
-			; 		PixelGetColor, three, 185, 797
-			; 		PixelGetColor, four, 257, 797
-			; 		PixelGetColor, five, 329, 797
-			; 		PixelGetColor, six, 401, 797
-			; 		textLog := textLog one " " two " " three  " " four " " five " " six "`n"
-			; 		GuiControl,, textBox, %textLog%
-			; 		first := 0
-			; 		second := 0
-			; 		third := 0
-			; 		fourth := 0  
-			; 		fifth := 0 
-			; 		sixth := 0
-			; 		Array := []
-
-			; 		; 1 = bronze, 2 = silver, 3 = gold
-					
-			; 		;   silver   gold    silver    gold    bronze   silver
-			; 		; 0x312810 0x21494A 0x312818 0x18494A 0x101410 0x312C10
-
-			; 		; bronze 0x212C39 ???
-
-			; 		PixelSearch, x1, y1, 41, 797, 41, 797, 0x212C39, 20
-			; 		if (ErrorLevel = 0) { ; is bronze
-			; 			first := 1
-			; 			Array.Push(1)
-			; 		} else {
-			; 			PixelSearch, x1, y1, 41, 797, 41, 797, 0x312810, 10
-			; 			if (ErrorLevel = 0) { ; is silver
-			; 				first := 2
-			; 				Array.Push(2)
-			; 			} else {
-			; 				PixelSearch, x1, y1, 41, 797, 41, 797, 0x18494A, 10
-			; 				if (ErrorLevel = 0) { ; is gold
-			; 					first := 3
-			; 					Array.Push(3)
-			; 				} else {
-			; 					Array.Push(0)
-			; 				}
-			; 			}
-			; 		}
-
-			; 		PixelSearch, x1, y1, 113, 797, 113, 797, 0x212C39, 20
-			; 		if (ErrorLevel = 0) { ; is bronze
-			; 			second := 1
-			; 			Array.Push(1)
-			; 		} else {
-			; 			PixelSearch, x1, y1, 113, 797, 113, 797, 0x312810, 10
-			; 			if (ErrorLevel = 0) { ; is silver
-			; 				second := 2
-			; 				Array.Push(2)
-			; 			} else {
-			; 				PixelSearch, x1, y1, 113, 797, 113, 797, 0x18494A, 10
-			; 				if (ErrorLevel = 0) { ; is gold
-			; 					second := 3
-			; 					Array.Push(3)
-			; 				} else {
-			; 					Array.Push(0)
-			; 				}
-			; 			}
-			; 		}
-
-			; 		PixelSearch, x1, y1, 185, 797, 185, 797, 0x212C39, 20
-			; 		if (ErrorLevel = 0) { ; is bronze
-			; 			third := 1
-			; 			Array.Push(1)
-			; 		} else {
-			; 			PixelSearch, x1, y1, 185, 797, 185, 797, 0x312810, 10
-			; 			if (ErrorLevel = 0) { ; is silver
-			; 				third := 2
-			; 				Array.Push(2)
-			; 			} else {
-			; 				PixelSearch, x1, y1, 185, 797, 185, 797, 0x18494A, 10
-			; 				if (ErrorLevel = 0) { ; is gold
-			; 					third := 3
-			; 					Array.Push(3)
-			; 				} else {
-			; 					Array.Push(0)
-			; 				}
-			; 			}
-			; 		}
-
-			; 		PixelSearch, x1, y1, 257, 797, 257, 797, 0x212C39, 20
-			; 		if (ErrorLevel = 0) { ; is bronze
-			; 			fourth := 1
-			; 			Array.Push(1)
-			; 		} else {
-			; 			PixelSearch, x1, y1, 257, 797, 257, 797, 0x312810, 10
-			; 			if (ErrorLevel = 0) { ; is silver
-			; 				fourth := 2
-			; 				Array.Push(2)
-			; 			} else {
-			; 				PixelSearch, x1, y1, 257, 797, 257, 797, 0x18494A, 10
-			; 				if (ErrorLevel = 0) { ; is gold
-			; 					fourth := 3
-			; 					Array.Push(3)
-			; 				} else {
-			; 					Array.Push(0)
-			; 				}
-			; 			}
-			; 		}
-
-			; 		PixelSearch, x1, y1, 329, 797, 329, 797, 0x212C39, 20
-			; 		if (ErrorLevel = 0) { ; is bronze
-			; 			fifth := 1
-			; 			Array.Push(1)
-			; 		} else {
-			; 			PixelSearch, x1, y1, 329, 797, 329, 797, 0x312810, 10
-			; 			if (ErrorLevel = 0) { ; is silver
-			; 				fifth := 2
-			; 				Array.Push(2)
-			; 			} else {
-			; 				PixelSearch, x1, y1, 329, 797, 329, 797, 0x18494A, 10
-			; 				if (ErrorLevel = 0) { ; is gold
-			; 					fifth := 3
-			; 					Array.Push(3)
-			; 				} else {
-			; 					Array.Push(0)
-			; 				}
-			; 			}
-			; 		}
-
-			; 		PixelSearch, x1, y1, 401, 797, 401, 797, 0x212C39, 20
-			; 		if (ErrorLevel = 0) { ; is bronze
-			; 			sixth := 1
-			; 			Array.Push(1)
-			; 		} else {
-			; 			PixelSearch, x1, y1, 401, 797, 401, 797, 0x312810, 10
-			; 			if (ErrorLevel = 0) { ; is silver
-			; 				sixth := 2
-			; 				Array.Push(2)
-			; 			} else {
-			; 				PixelSearch, x1, y1, 401, 797, 401, 797, 0x18494A, 10
-			; 				if (ErrorLevel = 0) { ; is gold
-			; 					sixth := 3
-			; 					Array.Push(3)
-			; 				} else {
-			; 					Array.Push(0)
-			; 				}
-			; 			}
-			; 		}
-			; 		countBronze := 0
-			; 		countSilver := 0
-			; 		countGold := 0
-			; 		for index, element in Array {
-
-			; 			if ( element == 1 ) { ; if element is bronze
-			; 				countBronze += 1
-			; 			}
-			; 			if ( element == 2 ) { ; if element is bronze
-			; 				countSilver += 1
-			; 			}
-			; 			if ( element == 3 ) { ; if element is bronze
-			; 				countGold += 1
-			; 			}
-			; 			textLog := textLog element " "
-			; 		}
-			; 		textLog := textLog "`n"
-			; 		textLog := textLog "Count: " countBronze " " countSilver " " countGold "`n"
-			; 		; textLog := textLog first " " second " " third " " fourth " " fifth " " sixth "`n"
-			; 		GuiControl,, textBox, %textLog%
-
-			; 		textLog := textLog "SH Bronze `n"
-			; 		for indexb, elementb in Array {
-			; 			ImageSearch, x, y, 178, 660, 264, 699, *100 %SHProceed% ; when Team Gaunlet logo appear
-			; 			If (ErrorLevel = 0) {
-			; 				Click, %x% %y%
-			; 				Sleep, 2000
-			; 			}
-			; 			if ( elementb == 1 ) {  ; if element is bronze
-			; 				textLog := textLog "SH do: " indexb " " 
-			; 				GuiControl,, textBox, %textLog%
-			; 				Sleep, 500
-			; 				OldSHPFingPixel(indexb, 0)
-			; 			}
-			; 		}
-
-			; 		textLog := textLog "SH Gold `n"
-			; 		for indexg, elementg in Array {
-			; 			ImageSearch, x, y, 178, 660, 264, 699, *100 %SHProceed% ; when Team Gaunlet logo appear
-			; 			If (ErrorLevel = 0) {
-			; 				Click, %x% %y%
-			; 				Sleep, 2000
-			; 			}
-			; 			if ( elementg == 3 ) {  ; if element is gold
-			; 				textLog := textLog "SH do: " indexg " "
-			; 				GuiControl,, textBox, %textLog%
-			; 				Sleep, 500
-			; 				OldSHPFingPixel(indexg, 1)
-			; 			}
-			; 		}
-
-			; 		textLog := textLog "SH Silver `n"
-			; 		for indexs, elements in Array {
-			; 			ImageSearch, x, y, 178, 660, 264, 699, *100 %SHProceed% ; when Team Gaunlet logo appear
-			; 			If (ErrorLevel = 0) {
-			; 				Click, %x% %y%
-			; 				Sleep, 2000
-			; 			}
-			; 			if ( elements == 2 ) {  ; if element is silver
-			; 				textLog := textLog "SH do: " indexs " "
-			; 				GuiControl,, textBox, %textLog%
-			; 				Sleep, 500
-			; 				OldSHPFingPixel(indexs, 1)
-			; 			}
-			; 		}
-					
-			; 		; loop bronze (low) => loop gold (high) => loop silver (high)
-			; 	}
-			; }
 			if ( SuperCoin_cb = 1 ) {
 
 				ImageSearch, x, y, 137, 647, 196, 676, *100 %SHPlay% ; SH Click play

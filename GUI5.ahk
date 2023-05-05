@@ -154,7 +154,8 @@ qgCount := -1
 KOTHWinCount := 0
 KOTHLoseCount := 0
 
-textLog := "Hi!`n"
+textLog := ""
+textLogKOTH := "KOTH: W 0 L 0 `n"
 
 SHtext := "none"
 
@@ -179,7 +180,7 @@ KOTHBig() {
 	PixelGetColor, big3, 285, 775
 
 	; textLog := textLog big1 " " big2 " " big3 "`n"
-	; GuiControl,, textBox, %textLog%
+	; 
 
 	; 0x182439 bronze
 	; 0x10454A gold
@@ -203,7 +204,7 @@ KOTHBig() {
 	}
 	
 	; textLog := textLog bronze1 bronze2 bronze3 "`n"
-	; GuiControl,, textBox, %textLog%
+	; 
 
 	; 1 bronze
 	If (bronze1 = 1 and bronze2 = 0 and bronze3 = 0){
@@ -279,25 +280,25 @@ QGHardReset(){
 	global qgCount
 	qgCount := -1
 	textLog := textLog "Quick Game count HARD reset`n" 
-	GuiControl,, textBox, %textLog%
+	
 }
 QGReset0(){
 	global qgCount
 	qgCount := 0
 	textLog := textLog "Quick Game count set to 0`n" 
-	GuiControl,, textBox, %textLog%
+	
 }
 QGReset1(){
 	global qgCount
 	qgCount := 1
 	textLog := textLog "Quick Game count set to 1`n" 
-	GuiControl,, textBox, %textLog%
+	
 }
 QGReset2(){
 	global qgCount
 	qgCount := 2
 	textLog := textLog "Quick Game count set to 2`n" 
-	GuiControl,, textBox, %textLog%
+	
 }
 
 SHSendText(){
@@ -317,6 +318,7 @@ SHArrayXY := [41, 113, 185, 257, 329, 401]
 Loop {
 	global isPause
 	global textLog
+	global textLogKOTH
 	global KOTHWinCount
 	global KOTHLoseCount
 	global qgCount
@@ -393,8 +395,8 @@ Loop {
 						Click, 228 742
 						Sleep, 2000
 						KOTHWinCount := KOTHWinCount + 1
-						textLog := textLog "KOTH Win,  W " KOTHWinCount " L " KOTHLoseCount " `n"
-						GuiControl,, textBox, %textLog%
+						textLogKOTH := "KOTH: W " KOTHWinCount " L " KOTHLoseCount " `n"
+						GuiControl,, textBox, %textLogKOTH%%textLog%
 						Click, 228 742
 						Sleep, 1000
 						Click, 228 742
@@ -406,8 +408,8 @@ Loop {
 						Click, 228 742
 						Sleep, 2000
 						KOTHLoseCount := KOTHLoseCount + 1
-						textLog := textLog "KOTH Lose, W " KOTHWinCount " L " KOTHLoseCount " `n"
-						GuiControl,, textBox, %textLog%
+						textLogKOTH := "KOTH: W " KOTHWinCount " L " KOTHLoseCount " `n"
+						
 						Click, 228 742
 						Sleep, 1000
 						Click, 228 742
@@ -563,8 +565,6 @@ Loop {
 																Click, 29 54 ; Back to QG menu
 
 																qgCount := 0
-																textLog := textLog "Quick Game Deck Reset`n"
-																GuiControl,, textBox, %textLog%	
 																Sleep, 1500
 																if ( QGStopReset_cb = 1 ) {
 																	doPause()
@@ -633,8 +633,6 @@ Loop {
 					ImageSearch, x7, y7, 128, 542, 192, 582, *50 %SHFree%
 					If (ErrorLevel = 0) {
 						SHtext := "none"
-						textLog := textLog "SH Pause because out of energy `n"
-						GuiControl,, textBox, %textLog%
 						doPause()
 					} Else {
 						; Go through Max 50 Cards popup
@@ -735,8 +733,6 @@ Loop {
 							}
 							Sleep, 1000
 						}
-						textLog := textLog "Finish SH`n"
-						GuiControl,, textBox, %textLog%	
 					}
 				}
 			}
@@ -1050,7 +1046,6 @@ Loop {
 						Sleep, 1000
 						ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %goldPick%
 						If (ErrorLevel = 0) { 
-							; textLog := textLog "Gold pick destroy`n"
 							Click, 138 498
 							Sleep, 4000
 							Click, 227 783
@@ -1058,7 +1053,6 @@ Loop {
 						} Else {
 							ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %emeraldPick%
 							If (ErrorLevel = 0) {
-								; textLog := textLog "Emerald pick destroy`n"
 								Click, 138 498
 								Sleep, 4000
 								Click, 227 783
@@ -1066,7 +1060,6 @@ Loop {
 							} Else {
 								ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %sapphirePick%
 								If (ErrorLevel = 0) {
-									; textLog := textLog "Sapphire pick destroy`n"
 									Click, 138 498
 									Sleep, 4000
 									Click, 227 783
@@ -1074,7 +1067,6 @@ Loop {
 								} Else {
 									ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %rubyPick%
 									If (ErrorLevel = 0) { 
-										; textLog := textLog "Ruby pick destroy`n"
 										Click, 138 498
 										Sleep, 4000
 										Click, 227 783
@@ -1082,7 +1074,6 @@ Loop {
 									} Else {
 										ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %amethystPick%
 										If (ErrorLevel = 0) { 
-											; textLog := textLog "Amethyst pick destroy`n"
 											Click, 138 498
 											Sleep, 4000
 											Click, 227 783
@@ -1090,7 +1081,6 @@ Loop {
 										} Else {
 											ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %onyxPick%
 											If (ErrorLevel = 0) { 
-												; textLog := textLog "Onyx pick destroy`n"
 												Click, 138 498
 												Sleep, 4000
 												Click, 227 783
@@ -1098,7 +1088,6 @@ Loop {
 											} Else {
 												ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %diamondPick%
 												If (ErrorLevel = 0) { 
-													; textLog := textLog "Diamond pick destroy`n"
 													Click, 138 498
 													Sleep, 4000
 													Click, 227 783
@@ -1106,7 +1095,6 @@ Loop {
 												} Else {
 													ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %perimeterPick%
 													If (ErrorLevel = 0) { 
-														; textLog := textLog "Perimeter pick destroy`n"
 														Click, 138 498
 														Sleep, 4000
 														Click, 227 783
@@ -1114,7 +1102,6 @@ Loop {
 													} Else {
 														ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %vortexPick%
 														If (ErrorLevel = 0) { 
-															; textLog := textLog "Vortex pick destroy`n"
 															Click, 138 498
 															Sleep, 4000
 															Click, 227 783
@@ -1122,7 +1109,6 @@ Loop {
 														} Else {
 															ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %sparkPick%
 															If (ErrorLevel = 0) { 
-																; textLog := textLog "Spark pick destroy`n"
 																Click, 138 498
 																Sleep, 4000
 																Click, 227 783
@@ -1130,7 +1116,6 @@ Loop {
 															} Else {
 																ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %downtownPick%
 																If (ErrorLevel = 0) { 
-																	; textLog := textLog "Downtown pick destroy`n"
 																	Click, 138 498
 																	Sleep, 4000
 																	Click, 227 783
@@ -1138,7 +1123,6 @@ Loop {
 																} Else {
 																	ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %streetPick%
 																	If (ErrorLevel = 0) { 
-																		; textLog := textLog "Street pick destroy`n"
 																		Click, 138 498
 																		Sleep, 4000
 																		Click, 227 783
@@ -1146,7 +1130,6 @@ Loop {
 																	} Else {
 																		ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %breakoutPick%
 																		If (ErrorLevel = 0) { 
-																			; textLog := textLog "Breakout pick destroy`n"
 																			Click, 138 498
 																			Sleep, 4000
 																			Click, 227 783
@@ -1184,7 +1167,6 @@ Loop {
 						Sleep, 200
 					}
 				}
-				; GuiControl,, textBox, %textLog%
 			}
 		}
 	}

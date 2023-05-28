@@ -991,20 +991,6 @@ Loop {
 					Click, 310 497
 					Sleep, 500
 				}
-				; Watch Video Ads
-				if ( draftAds_cb = 1 ) {
-					ImageSearch, xda, yda, 50, 50, 400, 400, *100 %adsFind%
-					If (ErrorLevel = 0) {
-						Click, %xda% %yda%
-						Sleep, 500
-						ImageSearch, xy, yy, 119, 349, 302, 425, *100 %ads%
-						If (ErrorLevel = 0) {
-							Sleep, 500
-							Click, 136 495
-							doPause()
-						}
-					}
-				}
 				; Go Back to Menu (Pick), have big room for cards
 				If ( draftNothing_rd = 1 ){
 					ImageSearch, x, y, 153, 799, 294, 829, *100 %draftCheck%
@@ -1039,104 +1025,109 @@ Loop {
 					}
 					ImageSearch, x, y, 1, 1, 449, 829, *30 %selectPick%
 					If (ErrorLevel = 0) {
-						Sleep, 200
-						Click, 347 125
-						Sleep, 200
-						Click, 217 784
-						Sleep, 1000
-						ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %goldPick%
-						If (ErrorLevel = 0) { 
-							Click, 138 498
-							Sleep, 4000
-							Click, 227 783
-							Sleep, 1500
-						} Else {
-							ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %emeraldPick%
-							If (ErrorLevel = 0) {
+						; pause when Watch Video Ads Tick
+						if ( draftAds_cb = 1 ) {
+							doPause()
+						} else {
+							Sleep, 200
+							Click, 347 125
+							Sleep, 200
+							Click, 217 784
+							Sleep, 1000
+							ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %goldPick%
+							If (ErrorLevel = 0) { 
 								Click, 138 498
 								Sleep, 4000
 								Click, 227 783
 								Sleep, 1500
 							} Else {
-								ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %sapphirePick%
+								ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %emeraldPick%
 								If (ErrorLevel = 0) {
 									Click, 138 498
 									Sleep, 4000
 									Click, 227 783
 									Sleep, 1500
 								} Else {
-									ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %rubyPick%
-									If (ErrorLevel = 0) { 
+									ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %sapphirePick%
+									If (ErrorLevel = 0) {
 										Click, 138 498
 										Sleep, 4000
 										Click, 227 783
 										Sleep, 1500
 									} Else {
-										ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %amethystPick%
+										ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %rubyPick%
 										If (ErrorLevel = 0) { 
 											Click, 138 498
 											Sleep, 4000
 											Click, 227 783
 											Sleep, 1500
 										} Else {
-											ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %onyxPick%
+											ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %amethystPick%
 											If (ErrorLevel = 0) { 
 												Click, 138 498
 												Sleep, 4000
 												Click, 227 783
 												Sleep, 1500
 											} Else {
-												ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %diamondPick%
+												ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %onyxPick%
 												If (ErrorLevel = 0) { 
 													Click, 138 498
 													Sleep, 4000
 													Click, 227 783
 													Sleep, 1500
 												} Else {
-													ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %perimeterPick%
+													ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %diamondPick%
 													If (ErrorLevel = 0) { 
 														Click, 138 498
 														Sleep, 4000
 														Click, 227 783
 														Sleep, 1500
 													} Else {
-														ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %vortexPick%
+														ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %perimeterPick%
 														If (ErrorLevel = 0) { 
 															Click, 138 498
 															Sleep, 4000
 															Click, 227 783
 															Sleep, 1500
 														} Else {
-															ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %sparkPick%
+															ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %vortexPick%
 															If (ErrorLevel = 0) { 
 																Click, 138 498
 																Sleep, 4000
 																Click, 227 783
 																Sleep, 1500
 															} Else {
-																ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %downtownPick%
+																ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %sparkPick%
 																If (ErrorLevel = 0) { 
 																	Click, 138 498
 																	Sleep, 4000
 																	Click, 227 783
 																	Sleep, 1500
 																} Else {
-																	ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %streetPick%
+																	ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %downtownPick%
 																	If (ErrorLevel = 0) { 
 																		Click, 138 498
 																		Sleep, 4000
 																		Click, 227 783
 																		Sleep, 1500
 																	} Else {
-																		ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %breakoutPick%
+																		ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %streetPick%
 																		If (ErrorLevel = 0) { 
 																			Click, 138 498
 																			Sleep, 4000
 																			Click, 227 783
 																			Sleep, 1500
 																		} Else {
-																			Sleep, 5000
-																			Click, 227 783
+																			ImageSearch, yesx, yesy, 25, 300, 425, 538, *10 %breakoutPick%
+																			If (ErrorLevel = 0) { 
+																				Click, 138 498
+																				Sleep, 4000
+																				Click, 227 783
+																				Sleep, 1500
+																			} Else {
+																				Sleep, 5000
+																				Click, 227 783
+																			}
 																		}
 																	}
 																}
@@ -1149,7 +1140,7 @@ Loop {
 									}
 								}
 							}
-						}
+						}					
 					}
 				}
 				; Keep Card (Pick)

@@ -1,7 +1,7 @@
 # NBA Supercard Autoclicker
 an AHK Autoclicker program for NBA SuperCard mobile game by PeppersLHCB (my online pseudonym) using AHK to detect specific screen from a mobile emulator (in this case, LDPlayer)
 
-### What you need:
+## What you need:
 - AutoHotKey V1.1
 - LDPlayer 9
 
